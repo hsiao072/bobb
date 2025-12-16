@@ -147,7 +147,7 @@ Material:
     - _QueueOffset: 0
     - _RGBSplit: 0.04
     - _RGBSplitSteps: 16
-    - _Radius: 1.0056
+    - _Radius: 0
     - _Radius2: 1
     - _ReceiveShadows: 1
     - _ReflectionProbes: 1
@@ -184,7 +184,7 @@ Material:
     - _GridColour: {r: 32, g: 0, b: 0, a: 0.5019608}
     - _GridColour2: {r: 0, g: 3.7277489, b: 8, a: 0.019607844}
     - _NoiseAnimation: {r: 0, g: 1, b: 0, a: 0}
-    - _Position: {r: 34.621307, g: 74.07, b: 5.78, a: 0}
+    - _Position: {r: 25.371029, g: 83.023476, b: 30.362421, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Vector0: {r: 1, g: 1, b: 0, a: 0}
     - _VerticalHighlightColour: {r: 4, g: 0.1254902, b: 0, a: 1}

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "bobb.sln"
+    "dotnet.defaultSolution": "bobb.slnx"
 }

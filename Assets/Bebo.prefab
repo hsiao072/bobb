@@ -14539,6 +14539,7 @@ GameObject:
   - component: {fileID: 6238314677973906659}
   - component: {fileID: 2121550381006006324}
   - component: {fileID: 87795819382546300}
+  - component: {fileID: -8528731980029402773}
   - component: {fileID: 3818804182775903240}
   - component: {fileID: 7198185109718995015}
   - component: {fileID: 8074074126299572190}
@@ -14558,9 +14559,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6368528814655062142}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.8189999, y: 0.603, z: 0.58899987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6788513825467945728}
@@ -14622,6 +14623,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8528731980029402773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368528814655062142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b166eba6b8334bdebb4ef3e2b32cba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMainBubble: 0
+  attractionForce: 2
+  attractionStartDistance: 4
+  attractionMaxDistance: 20
+  mainBubblePrefab: {fileID: 0}
+  respawnOffset: {x: 0, y: 0, z: 0}
+  growthSpeed: 1
+  maxSize: 15
+  shapingTime: 1.5
+  dragSensitivity: 0.005
+  waveAmplitude: 0.15
+  waveFrequency: 8
+  damping: 3
+  upwardForce: 1.2
+  verticalDriftAmplitude: 1.5
+  verticalDriftSpeed: 1.5
+  maxFloatHeight: 2
+  horizontalDriftForce: 2
+  driftChangeInterval: 3.5
+  minFloatHeight: 0.5
+  verticalRangeFromStart: 5
 --- !u!114 &3818804182775903240
 MonoBehaviour:
   m_ObjectHideFlags: 0
