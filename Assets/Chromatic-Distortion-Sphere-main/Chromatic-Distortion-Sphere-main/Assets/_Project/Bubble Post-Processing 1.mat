@@ -139,7 +139,7 @@ Material:
     - _QueueOffset: 0
     - _RGBSplit: 0.04
     - _RGBSplitSteps: 16
-    - _Radius: 0
+    - _Radius: 1.396202
     - _Radius_Scale: 1
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
@@ -173,7 +173,7 @@ Material:
     - _Fresnel2Colour: {r: 5.686643, g: 2.548525, b: 1.91343, a: 1}
     - _FresnelColour: {r: 0, g: 1.3271092, b: 3.9999995, a: 1}
     - _NoiseAnimation: {r: 0, g: 1, b: 0, a: 0}
-    - _Position: {r: 25.371029, g: 83.023476, b: 30.362421, a: 0}
+    - _Position: {r: 15.766, g: 77.832, b: 13.597, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Vector0: {r: 1, g: 1, b: 0, a: 0}
