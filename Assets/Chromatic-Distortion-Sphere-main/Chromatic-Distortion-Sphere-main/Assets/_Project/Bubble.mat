@@ -117,14 +117,14 @@ Material:
     - _Metallic: 0
     - _NoiseFresnelNormalBlend: 1
     - _NoiseNormalBlend: 0.1
-    - _NoiseNormalScale: 0.3
-    - _NoiseScale: 3
+    - _NoiseNormalScale: 0.19
+    - _NoiseScale: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _PosterizeUVs: 3.93
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RGBSplit: 0.0015
+    - _RGBSplit: 0.0013
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
