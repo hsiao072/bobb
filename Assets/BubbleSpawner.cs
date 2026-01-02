@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+
 
 public class BubbleSpawner : MonoBehaviour
 {
@@ -8,42 +10,44 @@ public class BubbleSpawner : MonoBehaviour
     private BubbleGrowth currentBubble;
     //private bool hasBlown = false;  // 是否已經吹過一次
     private BubbleGrowth mainBubble;   // ★ 主要泡泡
+    private bool lastTriggerState = false;
 
     void Update()
+{
+    InputDevice rightHand =
+        InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+
+    if (!rightHand.isValid) return;
+
+    rightHand.TryGetFeatureValue(
+        CommonUsages.trigger,
+        out float triggerValue
+    );
+
+    bool triggerPressed = triggerValue > 0.8f;
+
+    // === 剛按下 Trigger ===
+    if (triggerPressed && !lastTriggerState)
     {
-        // 只能吹一次（hasBlown 為 false 才能生成）
-        /*if (!hasBlown)
-        {
-            // 第一次按下滑鼠 → 生成泡泡
-            if (Input.GetMouseButtonDown(0))
-            {
-                SpawnBubbleAtMouse();
-                hasBlown = true;    // 標記：只能吹一次
-            }
-        }*/
-
-        if (Input.GetKeyDown(KeyCode.F))
-            SpawnBubbleAtMouse();
-
-        // 如果已有泡泡（正被吹）
-        if (currentBubble != null)
-        {
-            // 按住滑鼠 → 成長
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                currentBubble.GrowBubble();
-            }
-
-            // 放開滑鼠 → 停止成長 & 開始漂浮
-            if (Input.GetKeyUp(KeyCode.F))
-            {
-                //currentBubble.StartFloating();
-                
-                currentBubble.StartShaping();
-                currentBubble = null;   // 之後不再操作
-            }
-        }
+        SpawnBubbleAtMouse();
     }
+
+    // === 按住 Trigger ===
+    if (triggerPressed && currentBubble != null)
+    {
+        currentBubble.GrowBubble();
+    }
+
+    // === 放開 Trigger ===
+    if (!triggerPressed && lastTriggerState && currentBubble != null)
+    {
+        currentBubble.StartShaping();
+        currentBubble = null;
+    }
+
+    lastTriggerState = triggerPressed;
+}
+
 
 void SpawnBubbleAtMouse()
 {
