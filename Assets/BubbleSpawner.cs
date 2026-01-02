@@ -22,20 +22,20 @@ public class BubbleSpawner : MonoBehaviour
             }
         }*/
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.F))
             SpawnBubbleAtMouse();
 
         // 如果已有泡泡（正被吹）
         if (currentBubble != null)
         {
             // 按住滑鼠 → 成長
-            if (Input.GetMouseButton(0))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 currentBubble.GrowBubble();
             }
 
             // 放開滑鼠 → 停止成長 & 開始漂浮
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetKeyUp(KeyCode.F))
             {
                 //currentBubble.StartFloating();
                 
