@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bubble
-  m_Shader: {fileID: 4800000, guid: f6df60a687fe8e24e960602a89c813ca, type: 3}
+  m_Shader: {fileID: 4800000, guid: ac7ccb18f29c94947afcb2522662fda7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -94,6 +94,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 0.12
     - _AlphaClip: 0
     - _AlphaCutoff: 0.5
     - _AlphaToMask: 0
@@ -116,15 +117,15 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _NoiseFresnelNormalBlend: 1
-    - _NoiseNormalBlend: 0.1
-    - _NoiseNormalScale: 0.19
+    - _NoiseNormalBlend: 0.473
+    - _NoiseNormalScale: 1
     - _NoiseScale: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _PosterizeUVs: 3.93
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RGBSplit: 0.0013
+    - _RGBSplit: 0.0088
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -136,8 +137,8 @@ Material:
     - _TessMax: 25
     - _TessMaxDisp: 25
     - _TessMin: 10
-    - _TessPhongStrength: 0.567
-    - _TessValue: 8
+    - _TessPhongStrength: 1
+    - _TessValue: 32
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

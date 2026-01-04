@@ -4859,6 +4859,7 @@ GameObject:
   - component: {fileID: 5826558337127124506}
   - component: {fileID: 81672595122263367}
   - component: {fileID: 6086198470640417929}
+  - component: {fileID: -351122976824156663}
   m_Layer: 0
   m_Name: Bebo_eyes_new
   m_TagString: Untagged
@@ -4876,8 +4877,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.006820654, y: -0.016099071, z: 0.008667317, w: 0.99980956}
   m_LocalPosition: {x: 15.802, y: 75.723, z: 13.626}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1525964500609766534}
   - {fileID: 6713730399635484337}
@@ -4917,7 +4918,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47be791c528be904598e4b47484039b0, type: 2}
+  - {fileID: 2100000, guid: 17832a3c7bb7d3b408e3a139223f6ec1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5034,6 +5035,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 5, z: 0}
   space: 1
+--- !u!114 &-351122976824156663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809597164409737954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7872334097131744fb9c9280079fb033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticAmplitude: 0.6
+  hapticDuration: 0.1
+  popSound: {fileID: 8300000, guid: 9bc5647b3fabd814eaa2a38e5a289cf6, type: 3}
 --- !u!1 &3012708071054364489
 GameObject:
   m_ObjectHideFlags: 0
