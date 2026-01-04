@@ -173,7 +173,7 @@ Material:
     - _Fresnel2Colour: {r: 5.686643, g: 2.548525, b: 1.91343, a: 1}
     - _FresnelColour: {r: 0, g: 1.3271092, b: 3.9999995, a: 1}
     - _NoiseAnimation: {r: 0, g: 1, b: 0, a: 0}
-    - _Position: {r: 15.836, g: 73.765, b: 13.653, a: 0}
+    - _Position: {r: 15.802, g: 75.723, b: 13.626, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Vector0: {r: 1, g: 1, b: 0, a: 0}
